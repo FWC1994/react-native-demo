@@ -1,0 +1,30 @@
+{
+  "id": "1944029",
+  "name": "weishi-demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "weishi",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "979202",
+      "name": "start",
+      "font_class": "star",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11219384",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "11982712",
+      "name": "Video, record, camera",
+      "font_class": "video",
+      "unicode": "e9d4",
+      "unicode_decimal": 59860
+    }
+  ]
+}

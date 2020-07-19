@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1595142610059'); /* IE9 */
+  src: url('iconfont.eot?t=1595142610059#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOIAAsAAAAAB3QAAAM5AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCOIInATYCJAMQCwoABCAFhG0HPRuOBsg+QDy2gyKqaU1GFEFI1hZXe+MFznP4gHj4d+z1viT/NwWiIVk+fgolIDog42fEjERf1NO9tKUrA6GMDLp/1o1ORmoRK4IQVQBQJUWXNq1hA44Si3HTGRYYGXLfCilxKuPHFvLoj7ArLk7AFTJ78gL+/8819WpAA8lvZ3OLKup6Hgk4wYFGhw94A9kEecP0kgbqay0m0GZKKHQiv7QWjBRhq0DcVMi6wKjjUBQWrkJzYmAR3wE1fdD5AHwrPh/rsDAiaWRhx5OX83ohc8lg9Yfu2+skQ4B3nRlsGBk7gEJcnQycpysYVVfbb/QcAqoqsWSwZLz64/pKz4c50V8eIclEU5jaAQ6gYGbJICEJloxJEqs/UmT4IfJahc4C7zFlokNIYq7Danxk27+7GV9vCh04NXYe7FLXuHlaQ92aqemnc6ccmhs2ZL9+N/z6Vf/jR+3Pn3Um+avD3htMf/72jF+/RtbtatH+t/iOu1/c0t7XuM4H3z2jbu1Y3fWUr6u8LYKe6CxigD1vh8Jiy/ydj8/fhk/Y/K/WK+rs7TQY2OHwwkd4UHsrykP5RFWAoqiOVsiXBzutJc63xMggaja3eWHRAq1oI93Wnehcfzgk940dri7GuD15OrknThaiGPiE1VSTXybuAmzIc92jAOS59B6Qf+icu8t3TOa2y47u1P+1Av4l931Djg2FY8EqsZnnCryNJcUThLpStDDh+vZi7nCLhDZtsPsIff5eIR/cnEqoBhtIWkxCVi2ghbIDGtodgKbqMLTZrmB4u36Mriit2GYOQOhxA5IuPyHr8REtlD/QMOQfNPWELrQ5FbYTttsUCpMcRro46cXdQ1jRQ7VCbOAmZXo1kfWpu1hbUNDqCZMUbhwVHtkPFxAtYVd0kfpl0ZwLWGBUg/PBckStplhkVEl6eLicczE5IkKYulN4D9WAieMYogtH9MK6DcEUelBaQladMxm8vxoh00etC1vIaNjrEYxEUTsWJVzkBrRAqt2U8SvHSPrJROM4ASZgKA0sH5gJdRSgMHG6nhLRgwsnP+ATJYtAlYSt0vDn5RoL5LAcwp1KpMhRoqE84F1Mr08iTL9f0UsoAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1595142610059') format('woff'),
+  url('iconfont.ttf?t=1595142610059') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1595142610059#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.weishistar:before {
+  content: "\e606";
+}
+
+.weishiuser:before {
+  content: "\e609";
+}
+
+.weishivideo:before {
+  content: "\e9d4";
+}
+
