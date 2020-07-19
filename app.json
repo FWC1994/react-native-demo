@@ -1,0 +1,12 @@
+{
+  "name": "weishi-rn-demo",
+  "displayName": "weishi-rn-demo",
+  "expo": {
+    "name": "weishi-rn-demo",
+    "slug": "weishi-rn-demo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
