@@ -17,6 +17,8 @@
 2. 安装相关依赖 执行：yarn install
 3. 运行 yarn run ios 或 yarn run android
 
+> 注： ios 第一次拉取项目需要进入ios目录执行pod install 安装依赖
+
 ### 需要调研问题
 后期开发需要提前调研解决的关键性问题和功能，并通过demo的方式集成到项目中，欢迎认领补充:
 - [ ] 如何使用自定义字体图标
