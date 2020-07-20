@@ -1028,14 +1028,7 @@
     xcode "^3.0.0"
     xml-js "^1.6.11"
 
-"@expo/vector-icons@^10.0.2":
-  version "10.2.0"
-  resolved "http://npm.baijiahulian.com/@expo%2fvector-icons/-/vector-icons-10.2.0.tgz#3c70656683a6a873e18efc00bc61fc160a80dc55"
-  integrity sha1-PHBlZoOmqHPhjvwAvGH8FgqA3FU=
-  dependencies:
-    lodash "^4.17.4"
-
-"@expo/vector-icons@^10.2.0":
+"@expo/vector-icons@^10.0.2", "@expo/vector-icons@^10.2.0":
   version "10.2.0"
   resolved "https://registry.npm.taobao.org/@expo/vector-icons/download/@expo/vector-icons-10.2.0.tgz#3c70656683a6a873e18efc00bc61fc160a80dc55"
   integrity sha1-PHBlZoOmqHPhjvwAvGH8FgqA3FU=
@@ -6034,7 +6027,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@15.7.2, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "http://npm.baijiahulian.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -6182,6 +6175,13 @@ react-native-screens@~2.9.0:
   version "2.9.0"
   resolved "http://npm.baijiahulian.com/react-native-screens/-/react-native-screens-2.9.0.tgz#ead2843107ba00fee259aa377582e457c74f1f3b"
   integrity sha1-6tKEMQe6AP7iWao3dYLkV8dPHzs=
+
+react-native-swiper@^1.6.0-rc.3:
+  version "1.6.0-rc.3"
+  resolved "https://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.6.0-rc.3.tgz#ece82906d908c6a78a0b75fa41982ffc2cd2fb20"
+  integrity sha1-7OgpBtkIxqeKC3X6QZgv/CzS+yA=
+  dependencies:
+    prop-types "^15.5.10"
 
 react-native-tab-view@^2.11.0:
   version "2.15.0"
