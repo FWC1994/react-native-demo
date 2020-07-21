@@ -31,6 +31,11 @@
 - [ ] 应用ios、android图标设置
 - [ ] 集成Redux
 - [ ] 本地数据存储AsyncStorage
+- [ ] 视频音频播放功能
+- [ ] 增加qq,微信第3方分享功能
+- [ ] 列表功能FlatList
+- [ ] tab页面切换组件集成
+- [ ] model组件封装
 
 未完待续...
 
