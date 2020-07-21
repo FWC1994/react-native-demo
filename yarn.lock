@@ -6183,7 +6183,7 @@ react-native-swiper@^1.6.0-rc.3:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-tab-view@^2.11.0:
+react-native-tab-view@^2.11.0, react-native-tab-view@^2.15.0:
   version "2.15.0"
   resolved "https://registry.npm.taobao.org/react-native-tab-view/download/react-native-tab-view-2.15.0.tgz?cache=0&sync_timestamp=1594818730889&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-native-tab-view%2Fdownload%2Freact-native-tab-view-2.15.0.tgz#71b0c87f7cb2cde1d740f7130c17f213f2cbcaa0"
   integrity sha1-cbDIf3yyzeHXQPcTDBfyE/LLyqA=
