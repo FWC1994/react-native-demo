@@ -89,6 +89,8 @@ target 'weishirndemo' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
   post_install do |installer|
     flipper_post_install(installer)
   end
