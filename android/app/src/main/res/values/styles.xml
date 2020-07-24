@@ -8,5 +8,7 @@
     <!-- Below line is handled by '@expo/configure-splash-screen' command and it's discouraged to modify it manually -->
     <item name="android:windowBackground">@drawable/splashscreen</item>
     <!-- Customize your splash screen theme here -->
+    <!--设置透明背景, 解决出现启动屏之前的白屏问题-->
+    <item name="android:windowIsTranslucent">true</item>
   </style>
 </resources>
