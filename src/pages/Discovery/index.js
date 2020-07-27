@@ -1,22 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import WSSwiper from './components/WSSwiper';
 import { View, Text, Button } from 'react-native';
 import commonStyles from '@/assets/styles/common';
 import { add } from '@/store/counter/action';
-
+import bannerAPI from '@/apis/banner';
 function Discovery(props) {
-	const pages = [{"id":1548,"coverUrl":"https://i.gsxcdn.com/476071139_105nvrf5.jpg","clickUrl":"https://w.url.cn/s/AC5xROe"},{"id":1549,"coverUrl":"https://p.gsxcdn.com/502365383_abft359c.jpg","clickUrl":"https://m.weishi100.com/mweb/series/?id=1093203"},{"id":1550,"coverUrl":"https://p.gsxcdn.com/476070815_zxxb75ul.jpg","clickUrl":"https://w.url.cn/s/AOf5OXm"},{"id":1551,"coverUrl":"https://p.gsxcdn.com/508170986_h58wkf9x.jpg","clickUrl":"https://m.weishi100.com/mweb/series/?id=1061308"},{"id":1552,"coverUrl":"https://i.gsxcdn.com/500277985_wvo42kbq.jpg","clickUrl":"https://m.weishi100.com/mweb/series/?id=1190346"}]
+	let [banners, setBanners] = useState(null);
 	const { count, add } = props;
+
+	useEffect(() => {
+		getBanner();
+	}, []);
+
+	// 获取banner数据
+	async function getBanner() {
+		let res;
+		try{
+			res = await bannerAPI.getList();
+		}catch(error){
+			console.error(error);
+		}
+		
+		if(res.data?.code !== 200 || !res.data.data) return;
+		setBanners(res.data.data)
+	}
 
 	return (
 		<View style={commonStyles.page}>
-			<WSSwiper pages={pages} height={150} width={'100%'}/>
+			{
+				banners && <WSSwiper pages={banners} height={150} width={'100%'}/>
+			}
 			<Text>{count}</Text>
 			<Button
 				onPress={() => add(1)}
 				title="add"
 			/>
+			
 		</View>
 		
 	);

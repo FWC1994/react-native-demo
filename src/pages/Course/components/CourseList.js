@@ -1,33 +1,35 @@
-import React from 'react';
+import React, { useState ,useEffect } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import CourseItem from './CourseItem';
+import courseAPI from '@/apis/course';
+
 const CourseList = (props) => {
     const { type } = props;
+    let [courses, setCourses] = useState([]);
 
-    let demoCourse = {
-        name: '找对风格·穿对衣',
-        coverUrl: 'https://p.gsxcdn.com/124024260_zicuubzj.jpg',
-        type: '系列课',
-        startAt: '2020-07-24'
-
-    }
-
-    let courseList = []
-
-    for(let i = 0; i < 50; i++){
-        let item = JSON.parse(JSON.stringify(demoCourse))
-        item.id = Math.random();
-        item.name = i + 1 + '、' + item.name
-        courseList.push(item);
-    }
-
+    useEffect(() => {
+		getCourses();
+    }, []);
     
+    // 获取课程列表
+    async function getCourses() {
+        let res;
+        try{
+            res = await courseAPI.getCourses();
+        }catch(error){
+            console.error(error);
+        }
+        if(res.data?.code !== 200) return;
+        setCourses(res.data.data.courses)
+    }
+
+
     const renderItem = ({ item }) => (
         <CourseItem courseData={item} />
     );
 
     return <FlatList
-        data={courseList}
+        data={courses}
         renderItem={renderItem}
         keyExtractor={item => item.id}
         style={styles.container}
