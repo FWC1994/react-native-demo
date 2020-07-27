@@ -6,13 +6,15 @@ import courseAPI from '@/apis/course';
 const CourseList = (props) => {
     const { type } = props;
     let [courses, setCourses] = useState([]);
+    let [refreshing] = useState(false);
+    
 
     useEffect(() => {
 		getCourses();
     }, []);
     
     // 获取课程列表
-    async function getCourses() {
+    async function getCourses(append) {
         let res;
         try{
             res = await courseAPI.getCourses();
@@ -20,7 +22,11 @@ const CourseList = (props) => {
             console.error(error);
         }
         if(res.data?.code !== 200) return;
-        setCourses(res.data.data.courses)
+        let list = res.data.data.courses
+        if(append){
+            list = courses.concat(list)
+        }
+        setCourses(list)
     }
 
 
@@ -32,6 +38,10 @@ const CourseList = (props) => {
         data={courses}
         renderItem={renderItem}
         keyExtractor={item => item.id}
+        refreshing={refreshing}
+        onRefresh={()=>getCourses(false)}
+        onEndReached={()=>getCourses(true)}
+        onEndReachedThreshold={0.5}
         style={styles.container}
     />
 };
