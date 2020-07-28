@@ -5,7 +5,6 @@ export default {
     async getCourses() {
         const prefix = '/m/course';
         const url = `${config.host}${prefix}/all`;
-        console.log(url)
         return axios.get(url);
     }
 }
