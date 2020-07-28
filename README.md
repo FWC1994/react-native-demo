@@ -11,6 +11,7 @@
 │   └── common -- 通用组件目录
 ├── config -- 配置文件以及常量定义
 ├── pages -- 页面目录
+├── store -- 数据状态管理
 └── utils -- 通用方法目录
 └── routes.js -- 页面路由
 ```
@@ -28,14 +29,15 @@
 - [x] 如何使用自定义字体图标
 - [x] 实现底部导航 页面切换
 - [x] 应用启动屏设置
-- [ ] 应用ios、android图标设置
-- [ ] 集成Redux
+- [x] 应用ios、android图标设置
+- [x] 集成Redux
 - [ ] 本地数据存储AsyncStorage
 - [ ] 视频音频播放功能
 - [ ] 增加qq,微信第3方分享功能
-- [ ] 列表功能FlatList
-- [ ] tab页面切换组件集成
+- [x] 列表功能FlatList
+- [x] tab页面切换组件集成
 - [ ] model组件封装
+- [x] Mock接口
 
 未完待续...
 
