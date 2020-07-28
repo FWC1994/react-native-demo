@@ -1,5 +1,5 @@
 export default {
-    host: __DEV__ ? 'http://localhost:3000' : 'https://m.weishi100.com',
+    host: __DEV__ ? 'http://172.30.102.6:3000' : 'https://m.weishi100.com',
     // 课程列表类型
     courseTypes: [
         {

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import WSSwiper from './components/WSSwiper';
-import { View, Text, Button } from 'react-native';
+import { View, Text, Button, NativeModules, Platform } from 'react-native';
 import commonStyles from '@/assets/styles/common';
 import { add } from '@/store/counter/action';
 import bannerAPI from '@/apis/banner';
+import ToastExample from '@/components/common/ToastExample';
+
 function Discovery(props) {
 	let [banners, setBanners] = useState(null);
 	const { count, add } = props;
@@ -26,6 +28,17 @@ function Discovery(props) {
 		setBanners(res.data.data)
 	}
 
+	function handleClick() {
+		if(Platform.OS === 'ios'){
+			const module = NativeModules.CustomModule;
+			module.getStringFromRN("hello,I am from ios");
+		}else{
+			ToastExample.show('call android module', ToastExample.SHORT);
+		}
+		
+		add(1)
+	}
+
 	return (
 		<View style={commonStyles.page}>
 			{
@@ -33,7 +46,7 @@ function Discovery(props) {
 			}
 			<Text>{count}</Text>
 			<Button
-				onPress={() => add(1)}
+				onPress={handleClick}
 				title="add"
 			/>
 			
