@@ -39,7 +39,7 @@ function WSTabView(props) {
 							key={route.key}
 						>
 							<Animated.Text style={{ color }}>{route.title}</Animated.Text>
-							{selected && <View style={[styles.line, {backgroundColor: constant.PRIMARY_COLOR}]}></View>}
+							{selected && <View style={[styles.bottomLine, { backgroundColor: constant.PRIMARY_COLOR }]}></View>}
 						</TouchableOpacity>
 					);
 				})}
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		
 	},
-	line: {
+	bottomLine: {
 		position: "absolute",
 		height: 3,
 		width: 40,
