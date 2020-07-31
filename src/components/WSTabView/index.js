@@ -30,7 +30,8 @@ function WSTabView(props) {
 		return (
 			<View style={styles.tabBar}>
 				{props.navigationState.routes.map((route, i) => {
-					let color = i === index ? constant.PRIMARY_COLOR : constant.TAB_COLOR;
+					let selected = i === index;
+					let color = selected ? constant.PRIMARY_COLOR : constant.TAB_COLOR;
 					return (
 						<TouchableOpacity
 							style={styles.tabItem}
@@ -38,6 +39,7 @@ function WSTabView(props) {
 							key={route.key}
 						>
 							<Animated.Text style={{ color }}>{route.title}</Animated.Text>
+							{selected && <View style={[styles.line, {backgroundColor: constant.PRIMARY_COLOR}]}></View>}
 						</TouchableOpacity>
 					);
 				})}
@@ -60,6 +62,14 @@ function WSTabView(props) {
 const styles = StyleSheet.create({
 	tabBar: {
 		flexDirection: 'row',
+		
+	},
+	line: {
+		position: "absolute",
+		height: 3,
+		width: 40,
+		bottom: 3,
+		borderRadius: 4
 	},
 	tabItem: {
 		flex: 1,

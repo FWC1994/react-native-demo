@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
 import WSSwiper from './components/WSSwiper';
 import { View, Text, Button, NativeModules, Platform } from 'react-native';
@@ -39,17 +40,26 @@ function Discovery(props) {
 		add(1)
 	}
 
+	function navToDownloadPage() {
+		Actions.download()
+	}
+
 	return (
 		<View style={commonStyles.page}>
 			{
 				banners && <WSSwiper pages={banners} height={150} width={'100%'}/>
 			}
 			<Text>{count}</Text>
+
 			<Button
 				onPress={handleClick}
 				title="add"
 			/>
 			
+			<Button
+				onPress={navToDownloadPage}
+				title="跳转我的下载"
+			/>
 		</View>
 		
 	);

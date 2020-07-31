@@ -4,6 +4,7 @@ import { StyleSheet } from 'react-native';
 import Course from './pages/Course/index';
 import Home from './pages/Home/index';
 import Discovery from './pages/Discovery/index';
+import Download from './pages/Download/index';
 import TabIcon from './components/TabIcon/index';
 
 const Routes = () => (
@@ -14,6 +15,7 @@ const Routes = () => (
                 <Scene key="course" component={Course} title="我的课程" icon={TabIcon} iconName={'video'} />
                 <Scene key="home" component={Home} title="个人中心" icon={TabIcon} iconName={'user'} />
             </Scene>
+            <Scene key="download" component={Download} title="我的下载" />
         </Stack>
     </Router>
 );

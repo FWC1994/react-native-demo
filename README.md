@@ -20,7 +20,8 @@
 ### 运行开发
 1. 准备React Native环境,可参考: [Requirements](https://reactnative.cn/docs/getting-started.html)
 2. 安装相关依赖 执行：yarn install
-3. 运行 yarn run ios 或 yarn run android
+3. 启动 mock 服务：yarn run mock
+4. 运行 yarn run ios 或 yarn run android
 
 > 注： ios 第一次拉取项目需要进入ios目录执行pod install 安装依赖
 

@@ -6,11 +6,12 @@ import {Provider} from 'react-redux';
 import Routes from './src/routes';
 import store from './src/store/index';
 export default function App() {
-
+	console.log('open----------------')
 	// 组件初始化设置启动屏三秒关闭
 	useEffect(() => {
 		setTimeout(() => {
 			SplashScreen.hide();
+			console.log('SplashScreen----------------')
 		}, 3000);
 	}, []);
 
